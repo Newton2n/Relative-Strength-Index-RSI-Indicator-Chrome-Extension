@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "RSI Alert - Binance (BTC/ETH)",
+  "version": "1.2",
+  "description": "Checks RSI (14) on BTCUSDT & ETHUSDT (3m, 5m, 15m) and notifies when RSI touches or crosses 30 or 70. Accurate TradingView-calculated RSI with BDT time.",
+  "permissions": ["notifications", "storage"],
+  "host_permissions": [
+    "https://api.binance.com/*",
+    "https://api.telegram.org/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
